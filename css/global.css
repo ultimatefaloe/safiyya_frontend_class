@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  font-weight: bold;
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* button style */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: var(--rounded-sm);
+  background-color: var(--color-primary);
+  color: var(--color-text);
+  outline: none;
+  border: 2px solid var(--color-primary);
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+.btn:hover {
+  background-color: var(--color-primary-dark);
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+.btn-secondary{
+  background-color: var(--color-dark);
+  color: var(--color-primary);
+}
+.btn-secondary:hover{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.btn-ghost{
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary)
+}
+.btn-ghost:hover{
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+.btn-rounded-full{
+  border-radius: var(--rounded-full);
+}
+
+/* size styles */
+.center-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.max-width{
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+
+
+/* Global Styles */
+/* Header styles */
+header {
+  background-color: var(--color-dark);
+  padding: 2rem 0;
+  box-shadow: var(--shadow);
+}
+.head-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-section a h1{
+  font-size: 2.4rem;
+  color: var(--color-primary);
+}
+
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+nav ul li a{
+  font-size: 1.6rem;
+  color: var(--color-muted);
+  margin-left: 2rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
