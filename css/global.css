@@ -79,6 +79,7 @@ h6 {
 /* size styles */
 .center-content{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -88,13 +89,28 @@ h6 {
   margin: 0 auto;
 }
 
-
+/* title styles */
+.title{
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-text);
+}
+.title::after{
+  content: "";
+  display: block;
+  width: 8rem;
+  height: 0.5rem;
+  background-color: var(--color-primary);
+  margin-top: 0.5rem;
+  border-radius: var(--rounded-full);
+}
 
 /* Global Styles */
 /* Header styles */
 header {
   background-color: var(--color-dark);
   padding: 2rem 0;
+  border-bottom: 1px solid var(--color-primary-dark);
   box-shadow: var(--shadow);
 }
 .head-section{
