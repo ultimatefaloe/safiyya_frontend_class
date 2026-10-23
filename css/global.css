@@ -82,6 +82,7 @@ h6 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--color-dark);
 }
 .max-width{
   width: 100%;
@@ -103,6 +104,9 @@ h6 {
   background-color: var(--color-primary);
   margin-top: 0.5rem;
   border-radius: var(--rounded-full);
+}
+.w-full{
+  width: 100%;
 }
 
 /* Global Styles */

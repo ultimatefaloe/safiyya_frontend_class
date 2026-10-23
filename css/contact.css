@@ -1,0 +1,58 @@
+/* Contact Page Styles */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.container p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+    margin: 3rem 0;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+.input-group label{
+  color: var(--color-text);
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.input-group label span{
+  color: var(--color-error);
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group textarea,
+.input-group select{
+  padding: 1.5rem;
+  border: 1px solid var(--color-muted-tp);
+  border-radius: var(--rounded-md);
+  background-color: var(--color-card);
+  color: var(--color-text);
+  font-size: 2rem;
+  transition: var(--transition);
+}
+.input-group textarea{
+  min-height: 150px;
+  resize: vertical;
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="email"]:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow);
+  outline: none;
+}
+
+.cta{
+  margin-top: 4rem;
+}
